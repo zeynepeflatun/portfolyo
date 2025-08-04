@@ -1,0 +1,246 @@
+#navbar {
+  flex-direction: column;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  overflow: hidden;
+  height: 80px;
+}
+
+@media(max-width: 500px) {
+  #navbar {
+    overflow-x: auto;
+  }
+
+  #navbar ul {
+    flex-shrink: 1;
+    padding: 0;
+  }
+
+  #navbar ul li a {
+    font-size: 0.75rem;
+    padding: 0.3 0.4rem;
+  }
+
+  #navbar ul li a.flag img {
+    width: 18px;
+    /* Daha küçük bayrak */
+    height: auto;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .iki {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #contact .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .iki {
+    gap: 1rem;
+  }
+
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  .contact-form {
+    min-width: 0;
+    padding: 0 0.5rem;
+  }
+}
+
+
+/* KART İÇERİĞİ DÜZENİ */
+.item,
+.abilities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.7rem;
+  min-width: 220px;
+  max-width: 350px;
+  min-height: 340px;
+}
+
+.item img,
+.abilities img {
+  width: 100%;
+  max-width: 260px;
+  height: 170px;
+  object-fit: cover;
+  margin-bottom: 0.7rem;
+}
+
+.item h2,
+.abilities h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+  text-align: center;
+}
+
+.item p,
+.abilities li {
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 0.2rem;
+  font-size: 1.08rem;
+}
+
+/* RESPONSIVE KARTLAR */
+@media (max-width: 900px) {
+  .items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item,
+  .abilities {
+    max-width: 90vw;
+    min-width: 180px;
+    min-height: 260px;
+    padding: 12px 8px;
+  }
+
+  .item img,
+  .abilities img {
+    max-width: 90vw;
+    height: 120px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .item,
+  .abilities {
+    max-width: 98vw;
+    min-width: 120px;
+    min-height: 180px;
+    padding: 8px 2px;
+  }
+
+  .item img,
+  .abilities img {
+    max-width: 98vw;
+    height: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contact-box {
+    padding: 1.2rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .contact-form button[type="submit"] {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .home,
+  #about,
+  #projects,
+  #ability,
+  #contact {
+    min-height: unset;
+    padding: 2rem 0.5rem;
+  }
+
+  .item,
+  .abilities {
+    min-width: 120px;
+    max-width: 98vw;
+    padding: 8px 2px;
+  }
+
+  .item img,
+  .abilities img {
+    max-width: 98vw;
+    height: 80px;
+  }
+
+  .contact-box {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    overflow: hidden;
+    height: auto;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  #navbar ul li a {
+    font-size: 0.95rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  #navbar ul li a.flag img {
+    width: 18px;
+    height: auto;
+  }
+
+  .home h1,
+  #about .name h2,
+  #projects h1,
+  #ability h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 0.7rem 0.7rem;
+  }
+
+  .contact-form button[type="submit"] {
+    font-size: 1rem;
+    padding: 0.8rem 0;
+  }
+}

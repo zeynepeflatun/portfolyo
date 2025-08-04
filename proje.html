@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/svg" href="CSS Proje/images/ze.svg">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Zeynep Eflatun </title>
+    <meta name="keyword" content="Zeynep Eflatun - Kişisel Portfolyo">
+    <meta name="description" content="Zeynep Eflatun - Kişisel Portfolyo">
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS Proje/global.css">
+    <link rel="stylesheet" href="CSS Proje/main.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="CSS Proje/tablet.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="CSS Proje/mobile.css">
+    <script src="./CSS Proje/makyajlama.js" defer></script>
+</head>
+
+<body>
+
+    <header class="bg-dark-blue">
+        <div class="container">
+            <nav id="navbar">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <div id="theme-toggle-container">
+                        <label class="theme-switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider">
+                                <span class="icon sun"><i class="fa-solid fa-sun"></i></span>
+                                <span class="icon moon"><i class="fa-solid fa-moon"></i></span>
+                            </span>
+                        </label>
+                    </div>
+                    <h1 class="heading-big" style="margin: 0 0 0 8px;">ZEYNEP EFLATUN</h1>
+                </div>
+                <div class="navbar-center">
+                    <ul class="navbar-menu">
+                        <li><a href="#home" data-key="nav_home">Ana Sayfa</a></li>
+                        <li><a href="#about" data-key="nav_about">Hakkımda</a></li>
+                        <li><a href="#projects" class="project" data-key="nav_projects">Projeler</a></li>
+                        <li><a href="#ability" data-key="nav_ability">Yetenekler</a></li>
+                        <li><a href="#contact" data-key="nav_contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-flags">
+                    <a href="#" class="flag"><img src="./CSS Proje/images/tr.webp" alt="Türkçe" title="Türkçe"
+                            width="24"></a>
+                    <a href="#" class="flag"><img src="./CSS Proje/images/uk.png" alt="English" title="English"
+                            width="24"></a>
+                    <a href="#" class="flag"><img src="./CSS Proje/images/de.png" alt="Deutsch" title="Deutsch"
+                            width="24"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1 data-key="home_side1">Gelecek Hazır, <br> Sıra Sende!</h1>
+            <div data-key="home_side2" class="typing-text">Sanal Gerçekliğin Dünyası</div>
+            <div class="social-links">
+                <a href="https://github.com/zeynepeflatun" target="_blank" aria-label="GitHub Profili">
+                    <i class="fab fa-github">
+                    </i>
+                </a>
+                <a href="https://www.linkedin.com/in/zeynepeflatun/" target="_blank" aria-label="LinkedIn Profili">
+                    <i class="fab fa-linkedin">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+
+        <img id="profil" src="./CSS Proje/images/boşprofil.webp" alt="Zeynep Eflatun">
+        <div class="name">
+            <h2 class="heading-big" data-key="about_title">Zeynep Eflatun</h2>
+            <p data-key="about_desc">Öğrenci - Marmara Üniversitesi | Stajyer – SOCRadar</p>
+        </div>
+
+        <a href="#projects" id="projeleregit" data-key="about_btn">Projelere Git</a>
+    </section>
+
+    <section id="projects">
+        <div>
+            <h1 class="design" data-key="projects_title">Projeler</h1>
+        </div>
+        <!-- <div class="underline"></div> -->
+        <div class="items">
+
+            <article class="item">
+                <img src="./CSS Proje/images/ai.jpg" alt="Yapay Zekâ">
+                <h2 data-key="project1_title">Yapay Zekâ</h2>
+                <p data-key="project1_desc">Bilgisayarların insanlar gibi düşünmesini, öğrenmesini ve karar vermesini
+                    sağlayan teknolojidir.
+                    Günümüzde sağlık, ulaşım ve güvenlik alanlarında yaygın olarak kullanılmaktadır.
+                </p>
+            </article>
+
+            <article class="item">
+                <img src="./CSS Proje/images/iot.webp" alt="Internet of Things">
+                <h2 data-key="project2_title">Internet of Things</h2>
+                <p data-key="project2_desc">Cihazların internet aracılığıyla birbirine bağlanarak veri alışverişi
+                    yapmasını sağlar. Akıllı ev
+                    sistemlerinden sanayiye kadar birçok alanda otomasyon sağlar.
+                </p>
+            </article>
+
+            <article class="item">
+                <img src="./CSS Proje/images/ar vr.jpg" alt="Sanal Gerçeklik">
+                <h2 data-key="project3_title">Sanal Gerçeklik</h2>
+                <p data-key="project3_desc">Kullanıcıyı dijital bir dünyaya taşıyan, gerçekçi görsel ve işitsel deneyim
+                    sunan teknolojidir.
+                    Eğitim, oyun ve simülasyonlarda sıkça kullanılır.
+                </p>
+            </article>
+
+            <article class="item">
+                <img src="./CSS Proje/images/other.jpg" alt="Sanal Gerçeklik">
+                <h2 data-key="project4_title">Harici Çalışmalar </h2>
+                <p data-key="project4_desc">Diğer projelerimiz hakkında detaylı bilgi almak, iş birliği yapmak veya
+                    önerilerinizi paylaşmak
+                    isterseniz bizimle iletişime geçmekten çekinmeyin.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- YETENEKLER  -->
+
+    <section id="ability">
+
+
+        <div>
+            <h1 class="ability-design" data-key="abilities_title">Yetenekler</h1>
+        </div>
+        <!-- <div class="underline"></div> -->
+        <div class="items">
+
+            <article class="abilities">
+                <img src="./CSS Proje/images/prodil.gif" alt="Hello World!">
+                <h2 data-key="ability1_title">Programlama Dilleri</h2>
+                <ul class="ok">
+                    <li data-key="ability1_item1">JavaScript</li>
+                </ul>
+            </article>
+
+            <article class="abilities">
+                <img src="./CSS Proje/images/webtek.gif" alt="Web Teknolojileri">
+                <h2 data-key="ability2_title"> Web Teknolojileri</h2>
+                <ul class="ok">
+                    <li data-key="ability2_item1">HTML</li>
+                    <li data-key="ability2_item2">CSS</li>
+                    <li data-key="ability2_item3">VS Code</li>
+                </ul>
+            </article>
+
+            <article class="abilities">
+                <img src="./CSS Proje/images/flag.gif" alt="Yabancı Diller">
+                <h2 data-key="ability3_title">Yabancı Diller </h2>
+                <ul class="ok">
+                    <li data-key="ability3_item1">Türkçe</li>
+                    <li data-key="ability3_item2">İngilizce</li>
+                    <li data-key="ability3_item3">Almanca</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- 
+    <section id="contact">
+        <div class="iki">
+            <div class="infos">
+                <div class="info1">
+                    <article> 
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="mail" data-key="contact_mail">zeynepeflatunn@gmail.com</span>
+                </article>
+                </div>
+                <div class="info1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="konum" data-key="contact_location">İstanbul, Türkiye</span>
+                </div>
+            </div>
+            <form class="contact-form" action="contact">
+                <input type="text" id="name" name="name" placeholder="Adınız">
+                <input type="email" id="email" name="email" placeholder="E-posta Adresiniz">
+                <textarea name="message" id="message" placeholder="Mesajınız"></textarea>
+                <button type="submit" class="gönder kirmizi">Gönder</button>
+            </form>
+        </div>
+    </section> -->
+
+
+    <section id="contact">
+        <div class="contact-flex">
+            <div class="contact-info">
+                <div class="contact-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-key="contact_mail" class="mail">zeynepeflatunn@gmail.com</span>
+                </div>
+                <div class="contact-box">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span data-key="contact_location" class="konum">İstanbul, Türkiye</span>
+                </div>
+            </div>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+                <input type="hidden" name="access_key" value="c1f6f320-5f5d-4cb6-8e37-fcb6a822b27e">
+                <input type="hidden" name="from_name" value="Zeynep Eflatun Website">
+                <input type="hidden" name="subject" value="Yeni İletişim Formu Mesajı">
+                <input type="hidden" name="replyto" value="zeynepeflatunn@gmail.com">
+                <input type="text" id="name" name="name" placeholder="Adınız" required>
+                <input type="email" id="email" name="email" placeholder="E-posta Adresiniz" required>
+                <textarea name="message" id="message" placeholder="Mesajınız" required></textarea>
+                <button type="submit">Gönder</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="form-success-message" style="display:none; text-align:center; margin-top:10px;"></div>
+
+    <!-- Eski butonu kaldırıyorum -->
+    <!-- <button data-key="up_btn" id="scrollToTopBtn" title="Yukarı Çık">🠕</button> -->
+    <!-- Yeni yukarı çık butonu -->
+    <!-- <div id="customScrollTopBtn" style="display:none;"></div> -->
+
+
+</body>
+
+</html>
